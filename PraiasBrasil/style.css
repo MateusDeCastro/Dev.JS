@@ -1,0 +1,25 @@
+body {
+    font-family: Comic Sans MS;
+    font-size: 18px;
+    background: lightsteelblue;
+    color: black;
+    text-align: justify;
+}
+
+.navbar {
+    text-align: center;
+}
+
+a {
+    color: black;
+}
+
+h1,
+h2,
+h3 {
+    text-align: center;
+}
+
+.card{
+    background-color: lightcyan;
+}
