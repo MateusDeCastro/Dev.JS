@@ -1,0 +1,104 @@
+body {
+    font-family: Comic Sans MS;
+    font-size: 18px;
+    background: lightsteelblue;
+    color: black;
+    text-align: justify;
+}
+
+.navbar {
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 999999999999;
+}
+
+.nav-link {
+    color: white;
+}
+
+.nav-link:hover {
+    color: deepskyblue;
+}
+
+a {
+    color: black;
+}
+
+h1,
+h2,
+h3 {
+    text-align: center;
+}
+
+.card {
+    background-color: lightcyan;
+}
+
+.container-fluid {
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-body .btn {
+    margin-top: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.meuicone,
+#menucheck,
+.mobile-menu {
+    display: none;
+}
+
+.desktop-menu {
+    display: block;
+}
+
+/*@media é uma regra do css para responsividade, 
+aplicando os estilos a determinadas situações, como por exemplo 
+quando as telas são pequenas demais ou grandes demais*/
+@media(max-width: 1200px) {
+    #navbar{
+        display: none;
+    }
+
+    #menucheck {
+        display: none;
+    }
+    .meuicone{
+        display: block;
+        background-color: #363636;
+        color:white;
+        padding: 10px;
+        cursor: pointer;
+        position: sticky;
+        top:0;
+    }
+    .mobile-menu{
+        display: none;
+        flex-direction: column;
+        background-color: #363636;
+        position: sticky;
+        top:0;
+    }
+    .mobile-menu a{
+        color:white;
+        padding: 10px;
+        text-decoration: none;
+        border-top: 1px solid white;
+    }    
+    #menucheck:checked + .meuicone + .mobile-menu{
+        display: flex;
+    }
+}
+
+.imgcopacabana{
+    display: flex;
+}
