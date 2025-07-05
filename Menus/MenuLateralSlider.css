@@ -1,0 +1,49 @@
+#menu {
+    display: none;
+    /*Esconde o ícone checkbox da tela*/
+}
+
+.menuicone {
+    /*Estilizando a label*/
+    display: block;
+    /*Exibe cada item, como um bloco, 
+    ocupando sua propria linha */
+    background-color: lightskyblue;
+    color: black;
+    font-size: 20px;
+    font-family: Comic Sans MS;
+    padding: 10px;
+    cursor: pointer;
+    /*Ajusta a largura ao tamanho do maior 
+    conteudo*/
+    width: 278px;
+}
+
+.menu-lateral {
+    /*Estilizando o menu oculto*/
+    display: none;
+    flex-direction: column;
+    background-color: lightskyblue;
+    color: black;
+    border-top: 1px solid;
+    font-size: 20px;
+    font-family: Comic Sans MS;
+    width: 15%;
+    height: 100vh;
+    padding-left: 15px;
+}
+
+.menu-lateral a {
+    /*Estilizando os links dentro do menu oculto*/
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+}
+
+#menu:checked+.menuicone+.menu-lateral {
+    display: flex;
+}
+
+.nav-item:hover {
+    color: red;
+}

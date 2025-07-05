@@ -1,0 +1,39 @@
+li{
+    height: 20px;
+}
+#menu{
+    display: none; /*Esconde o ícone checkbox da tela*/
+}
+.menuicone{ /*Estilizando a label*/
+    display: block; /*Exibe cada item, como um bloco, 
+    ocupando sua propria linha */
+    background-color:lightskyblue;
+    color: black;
+    font-size: 20px;
+    font-family: Comic Sans MS;
+    padding: 10px;
+    cursor: pointer;
+    width: fit-content; /*Ajusta a largura ao tamanho do maior 
+    conteudo*/
+}
+.menu-mobile{ /*Estilizando o menu oculto*/
+    display: none;
+    flex-direction: column;
+    background-color: lightskyblue;
+    color:black;
+    border-top: 1px solid;
+    font-size: 20px;
+    font-family: Comic Sans MS;
+}
+
+.menu-mobile a{ /*Estilizando os links dentro do menu oculto*/
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+} 
+#menu:checked + .menuicone + .menu-mobile{
+    display: flex;
+}
+.nav-item:hover{
+    color:red;
+}
