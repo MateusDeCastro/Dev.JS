@@ -6,6 +6,16 @@ body {
     text-align: justify;
 }
 
+footer{
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    background-color: #363636;
+    color:white;
+    padding-top: 10px;
+    padding-bottom: 1px;
+}
+
 .navbar {
     text-align: center;
     position: sticky;
@@ -36,7 +46,7 @@ h3 {
 }
 
 .container-fluid {
-    padding-left: 8%;
+    padding-left: 8;
     padding-right: 8%;
 }
 
@@ -61,6 +71,14 @@ h3 {
     display: block;
 }
 
+#umimgcopacabana, #umimgperere, #umimgcachorro, #umimgporto, #umimgjeri{
+    margin-right: 100px;
+    margin-top: 10px;
+}
+
+section{
+    margin-top: 90px;
+}
 /*@media é uma regra do css para responsividade, 
 aplicando os estilos a determinadas situações, como por exemplo 
 quando as telas são pequenas demais ou grandes demais*/
@@ -85,17 +103,26 @@ quando as telas são pequenas demais ou grandes demais*/
         display: none;
         flex-direction: column;
         background-color: #363636;
-        position: sticky;
-        top:0;
+        position: fixed;
+        top:45px;
     }
     .mobile-menu a{
         color:white;
         padding: 10px;
         text-decoration: none;
         border-top: 1px solid white;
+        position: sticky;
     }    
     #menucheck:checked + .meuicone + .mobile-menu{
         display: flex;
+    }
+    #umimgcopacabana, #umimgperere, #umimgcachorro, #umimgporto, #umimgjeri{
+        margin-right: 0px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    section{
+        margin-top: 50px;
     }
 }
 
