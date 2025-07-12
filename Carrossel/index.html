@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrossel de imagem</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <!--Importa o arquivo CSS do bootstrap versão 4.5.2 para aplicar estilos prontos de layout, botões, carrossel ... entre outros-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!--Importa o CSS local-->
+    <link rel="stylesheet" href="style.css">
+    <!--Importa o Popper.js, uma biblioteca que ajuda no posicionamento "Correto" de elementos como menus, dropdown (listas suspensas) e outros elementos em nosso projeto-->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <!--Imorta o JavaScript do bootstrap versão 4.5.2 ayivando os componentes interativos como por exemplo do carrossel de imagens-->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"> </script>
+
+</head>
+
+<body>
+    <div class="container">
+        <br>
+        <h1 style="text-align: center;">Preserve a Natureza - Nosso Planeta, Nosso Dever</h1>
+        <br>
+        <p style="text-align: center">A natureza é a nossa casa e fonte de vida. Cada árvore, animal e gota de água tem
+            um papel essencial no
+            equilíbrio do planeta. Este site convida você a observar, refletir e se encantar com a beleza do mundo
+            natural.
+            Explore os carrosséis de imagens e vídeos, aprenda com cada exemplo e descunra formas de preservar o que
+            temos
+            de mais precioso: a vida em todas as suas formas</p>
+        <hr>
+        <br>
+        <center>
+
+            <!--Carrossel 1 - Passagem automática-->
+            <!-- Atributos: 
+            class="carousel slide - Habilita o efeito de transição entre as imagens"
+            data-ride="carousel - Avisa a página web que assim que for aberta deve iniciar a animação do slide
+            data-interval="5000" - Define o tempo de intervalo entre os slides em milissegundos -->
+            <div id="carrossel1-Slides" class="carousel slide" data-ride="carousel" data-interval="3000">
+                <!--A div abaixo contém todos os slides do carrossel. o que determina isso é o atributo carousel-inner da class-->
+                <div class="carousel-inner">
+                    <!--Agora teremos as divs que conterão as imagens-->
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="floresta.jpg" height="500px" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="floresta1.jpg" height="500px" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="leopardo.jpg" height="500px" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="ursopardo.jpg" height="500px" alt="">
+                    </div>
+                </div>
+            </div>
+            <br>
+            <hr>
+            <br>
+            <div id="carrossel2-Slides" class="carousel slide" data-ride="carousel" data-interval="3000">
+                <!--A div abaixo contém todos os slides do carrossel. o que determina isso é o atributo carousel-inner da class-->
+                <div class="carousel-inner">
+                    <!--Agora teremos as divs que conterão as imagens-->
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="floresta.jpg" height="500px" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="floresta1.jpg" height="500px" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="leopardo.jpg" height="500px" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="ursopardo.jpg" height="500px" alt="">
+                    </div>
+                </div>
+                <!--Botão anterior (prev)-->
+                <a class="carousel-control-prev" href="#carrossel2-Slides" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Anterior</span>
+                </a>
+                <!--Botão próximo-->
+                <a class="carousel-control-next" href="#carrossel2-Slides" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Próximo</span>
+                </a>
+            </div>
+            <br>
+            <hr>
+            <br>
+            <div id="carrossel3-Slides" class="carousel slide" data-ride="carousel" data-interval="3000">
+                <!--A div abaixo contém todos os slides do carrossel. o que determina isso é o atributo carousel-inner da class-->
+                <ol class="carousel-indicators">
+                    <li data-target="#carrossel3-Slides" data-slide-to="0" class="active"></li>
+                    <li data-target="#carrossel3-Slides" data-slide-to="1"></li>
+                    <li data-target="#carrossel3-Slides" data-slide-to="1"></li>
+                    <li data-target="#carrossel3-Slides" data-slide-to="1"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <!--Agora teremos as divs que conterão as imagens-->
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="floresta.jpg" height="500px" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="floresta1.jpg" height="500px" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="leopardo.jpg" height="500px" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="ursopardo.jpg" height="500px" alt="">
+                    </div>
+                </div>
+                <!--Botão anterior (prev)-->
+                <a class="carousel-control-prev" href="#carrossel3-Slides" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Anterior</span>
+                </a>
+                <!--Botão próximo-->
+                <a class="carousel-control-next" href="#carrossel3-Slides" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Próximo</span>
+                </a>
+            </div>
+            <br>
+            <hr>
+            <br>
+            <div id="carrossel4-Slides" class="carousel slide" data-ride="carousel" data-interval="3000">
+                <!--A div abaixo contém todos os slides do carrossel. o que determina isso é o atributo carousel-inner da class-->
+                <ol class="carousel-indicators">
+                    <li data-target="#carrossel4-Slides" data-slide-to="0" class="active"></li>
+                    <li data-target="#carrossel4-Slides" data-slide-to="1"></li>
+                    <li data-target="#carrossel4-Slides" data-slide-to="1"></li>
+                    <li data-target="#carrossel4-Slides" data-slide-to="1"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <!--Agora teremos as divs que conterão as imagens-->
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="floresta.jpg" height="500px" alt="">
+                        <div class="carousel-caption">
+                            <h1>Primeira foto</h1>
+                            <p>Uma floresta em sua época de outono, bem alaranjada.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="floresta1.jpg" height="500px" alt="">
+                        <div class="carousel-caption">
+                            <h1>Segunda foto</h1>
+                            <p>Uma floresta em sua época de verão, bem verde por causa das altas chuvas.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="leopardo.jpg" height="500px" alt="">
+                        <div class="carousel-caption">
+                            <h1>Terceira foto</h1>
+                            <p>Uma foto magnífica de um leopardo</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="ursopardo.jpg" height="500px" alt="">
+                        <div class="carousel-caption">
+                            <h1>Quarta foto</h1>
+                            <p>Uma foto extraordinária de dois ursos a beria da cachoeira.</p>
+                        </div>
+                    </div>
+                </div>
+                <!--Botão anterior (prev)-->
+                <a class="carousel-control-prev" href="#carrossel4-Slides" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Anterior</span>
+                </a>
+                <!--Botão próximo-->
+                <a class="carousel-control-next" href="#carrossel4-Slides" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Próximo</span>
+                </a>
+            </div>
+            <br>
+            <hr>
+            <br>
+    </div>
+    </center>
+</body>
+
+</html>
