@@ -1,0 +1,11 @@
+.imagem {
+    width: 400px;
+    height: 400px;
+    background-image: url('fofo.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.imagem:hover {
+    background-image: url('terror.jpg');
+}
