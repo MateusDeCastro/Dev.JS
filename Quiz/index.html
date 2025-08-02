@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="main.js" defer></script>
 </head>
+
 <body>
     <h1>Quiz: HTML e CSS</h1>
     <p>1. Qual tag usamos para inserir uma imagem em HTML?</p>
@@ -16,7 +18,7 @@
         <button id="c1" onclick="vperg1(this,'c1')">c) &lt;img&gt;</button>
         <button id="d1" onclick="vperg1(this,'d1')">d) &lt;image&gt;</button>
         <p id="resp1"></p>
-        <button class="limpar" onclick="reiniciar1()">Reiniciar</button>
+        <button class="limpar" onclick="reiniciar1()">Reiniciar pergunta</button>
     </div>
     <p>2. Qual propriedade do CSS altera a cor do texto?</p>
     <div id="pergunta2">
@@ -25,7 +27,22 @@
         <button id="c2" onclick="vperg2(this,'c2')">c) font</button>
         <button id="d2" onclick="vperg2(this,'d2')">d) text-color</button>
         <p id="resp2"></p>
-        <button class="limpar" onclick="reiniciar2()">Reiniciar</button>
+        <button class="limpar" onclick="reiniciar2()">Reiniciar pergunta</button>
+    </div>
+    <p>3. Qual tag usamos para criar uma lista não ordenada em HTML?</p>
+    <div id="pergunta3">
+        <button id="a3" onclick="vperg3(this,'a3')">a) &lt;ul&gt;</button>
+        <button id="b3" onclick="vperg3(this,'b3')">b) &lt;ol&gt;</button>
+        <button id="c3" onclick="vperg3(this,'c3')">c) &lt;li&gt;</button>
+        <button id="d3" onclick="vperg3(this,'d3')">d) &lt;list&gt;</button>
+        <p id="resp3"></p>
+        <button class="limpar" onclick="reiniciar3()">Reiniciar pergunta</button>
+    </div>
+    <br>
+    <br>
+    <div id="reiniciar">
+        <button class="limpar" onclick="reiniciartudo()">Reiniciar o Quiz</button>
     </div>
 </body>
+
 </html>
